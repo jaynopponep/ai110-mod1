@@ -4,9 +4,11 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 ## 1. What was broken when you started?
 
-- What did the game look like the first time you ran it?
-- List at least two concrete bugs you noticed at the start  
-  (for example: "the secret number kept changing" or "the hints were backwards").
+- Putting a low number (<50) would infinitely tell me to go Lower
+- Entering a high number >50~ would keep telling me to go higher, even if i put 99999999999999999999999999999999999999999999
+- "New Game" functionality doesn't work
+- Entering invalid input (non-number) still costs you attempts and is logged into history. no score is deducted so i'm assuming this is unintended behavior
+- Always 1 attempt used in the beginning
 
 ---
 
