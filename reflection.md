@@ -4,28 +4,33 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 ## 1. What was broken when you started?
 
-- Putting a low number (<50) would infinitely tell me to go Lower
-- Entering a high number >50~ would keep telling me to go higher, even if i put 99999999999999999999999999999999999999999999
-- "New Game" functionality doesn't work
-- Entering invalid input (non-number) still costs you attempts and is logged into history. no score is deducted so i'm assuming this is unintended behavior
-- Always 1 attempt used in the beginning
+- Putting a low number (<50) would infinitely tell me to go Lower - fixed
+- Entering a high number >50~ would keep telling me to go higher, even if i put 99999999999999999999999999999999999999999999 - fixed
+- "New Game" functionality doesn't work - fixed
+- Always 1 attempt used in the beginning - fixed
 
 ---
 
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+-> used Claude Code, specifically github/coder/claudecode.nvim plugin which is very nice
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
+-> Everything was correct given the low complexity of the app
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+-> Not anything incorrect given app's scope.
 
 ---
 
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
+-> Business logic is reflected on the UI/UX, tests pass
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
+-> Verify that when check_guess() is called, and input < solution, then it would say go higher, and go lower for vice versa
 - Did AI help you design or understand any tests? How?
+-> Just gives me exactly what I described
 
 ---
 

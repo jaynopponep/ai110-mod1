@@ -70,10 +70,10 @@ with col3:
     show_hint = st.checkbox("Show hint", value=True)
 
 if new_game:
-    print("aga")
-    st.session_state.attempts = attempt_limit_map[difficulty]
+    st.session_state.attempts = 0
     st.session_state.score = 0
     st.session_state.secret = random.randint(1, 100)
+    st.session_state.status = "playing"
     st.success("New game started.")
     st.rerun()
 
