@@ -25,13 +25,13 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- Game is a classic guess the number with lower/higher mechanics
+- Bugs included low numbers being told to go lower rather than higher, and vice versa.
+- Starting a new game did not work
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+![guessnumber_demo](ai110_show.gif)
 
 ## 🚀 Stretch Features
 
